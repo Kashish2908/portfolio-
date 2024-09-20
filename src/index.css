@@ -1,0 +1,188 @@
+/* .nav-link.active {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+   */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@100, 300, 400, 500, 600&display=swap');
+
+body, html {
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+.card {
+    /* 336*232 */
+    background-color: #fff;
+    border-radius: 2px;
+    height: 232px;
+    width: 336px;
+    margin: 0 auto;
+    border: none;
+}
+
+.card2 {
+    max-width: 336px;
+    height: 430px;
+}
+
+
+.card3 {
+    max-width: 336px;
+    height: 500px;
+}
+
+
+.circle {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #FFEECC;
+}
+
+.circle-2 {
+    height: 100px;
+    width: 100px;
+}
+
+.arrowCircle {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+
+}
+
+.arrowRotate {
+    transform: rotate(-45deg);
+    transition: transform 0.2s linear;
+}
+
+.iconCircle {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s linear;
+}
+
+.px-custom {
+    padding: .6rem 2.6rem !important;
+}
+
+.me-custom {
+    margin-right: 1.7rem !important;
+}
+
+.custom-border {
+    border-color: #000 !important;
+}
+
+.fs-45 {
+    font-size: 1.55rem !important;
+}
+
+.gx-7 {
+    --bs-gutter-x: 7rem !important;
+}
+
+.text-yellow {
+    color: #ffaa00 !important;
+}
+
+.bg-marqueeBadge1 {
+    background-color: #44419F;
+    color: #fff;
+}
+
+.bg-marqueeBadge2 {
+    background-color: #FFEDC2;
+    color: #000;
+}
+
+.mixBlend-Exclusion {
+    mix-blend-mode: exclusion !important;
+}
+
+.card-layout {
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: minmax(0px, 1fr);
+    grid-template-columns: repeat(3, 336px);
+    grid-template-rows: repeat(2, minmax(0px, 1fr));
+    height: 900px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+
+.contact-layout {
+    height: 680px;
+}
+
+
+.text-bg-beige {
+    background-color: #FFEECC;
+    color: #000;
+    font-weight: 700;
+    font-size: 1em;
+    padding: .6rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.col-6{
+    height: 86%;
+    background-color: #000;
+}
+
+.card:hover .overlay {
+    display: flex;
+}
+
+#profile-img{
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.card:hover #profile-img {
+    transform: scale(1.2);
+}
+
+.socialCard-layout{
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(2, minmax(33px, 1fr));
+    grid-template-rows: repeat(2, min-content);
+    height: 464px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 336px;
+}
